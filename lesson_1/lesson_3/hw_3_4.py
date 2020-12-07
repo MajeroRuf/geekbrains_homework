@@ -29,7 +29,6 @@ def my_func():
     else:
         print('Степень не отрицательная!!!')
     return step
-
 result = my_func()
 print(result)
 
