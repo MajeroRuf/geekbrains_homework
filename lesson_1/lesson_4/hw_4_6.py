@@ -10,10 +10,15 @@
 
 from itertools import count, cycle
 
-a = int(input("Введите целое число начала цикла создания: "))
-b = int(input("Введите целое число конца цикла создания: "))
-my_list =[]
+try:
+    a = int(input("Введите целое число начала цикла: "))
+    b = int(input("Введите целое число конца цикла: "))
+except ValueError as err:
+    print('Ошибка', err)
+    exit()
 
+my_list =[]
+"""Оставлю напоминалку, на лекции сказали count в генератор не пихать :))"""
 for el in count(a):
     if el > b:
         break
