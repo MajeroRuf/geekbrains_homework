@@ -1,0 +1,7 @@
+Ivanov,30000,rub
+Petrov,20000,rub
+Sidorov,50000,rub
+Nasyalnika,500000,rub
+Ravshan,10000,rub
+Djamshut,15000,rub
+Roy Jons jn,5000, rub
