@@ -23,16 +23,19 @@ class Matrix:
                 self.matrix[i][j] = self.matrix[i][j] + other.matrix[i][j]
         return Matrix(self.matrix)
 
-
-x = int(input("Введите первый индекс матрицы: "))
-y = int(input("Введите второй индекс марицы: "))
+try:
+    x = int(input("Введите первый индекс матрицы: "))
+    y = int(input("Введите второй индекс марицы: "))
+except ValueError as err:
+    print('Число не целое', err)
 
 matrix1 = Matrix([[random.randint(0, 100) for i in range(x)] for j in range(y)])
-print(f'первая матрица {matrix1}')
+print(f'первая матрица: {matrix1}')
 matrix2 = Matrix([[random.randint(0, 100) for i in range(x)] for j in range(y)])
-print(f'вторая матрица {matrix2}')
+print(f'вторая матрица: {matrix2}')
 matrix3 = Matrix([[random.randint(0, 100) for i in range(x)] for j in range(y)])
-print(f'третья матрица {matrix3}')
+print(f'третья матрица: {matrix3}')
 matrix4 = matrix1 + matrix2 + matrix3
-print(f'сумма матриц {matrix1}')
+print(f'сумма матриц:   {matrix1}')
+
 
